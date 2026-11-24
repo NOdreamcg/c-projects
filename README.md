@@ -8,13 +8,20 @@
 | 编号 | 项目 | 涉及知识点 |
 |---|---|---|
 | 01 | struct-sort：学生成绩排序 | 结构体、结构体数组、整体赋值、冒泡排序 |
-| 02 | （待做）动态数组 | `malloc` / `free`、指针 |
-| 03 | （待做）成绩管理系统 | 文件读写、结构体 + 函数分模块 |
+| 02 | dynamic-array：动态数组 | `malloc` / `realloc` / `free`、容量翻倍 |
+| 03 | recursion：递归 | 递归调用栈、汉诺塔（带过程追踪） |
+| 04 | file-io：文件读写 | `fopen` / `fprintf` / `fscanf`、三种文件模式 |
+| 05 | functions：拆函数 | 数组传参退化、返回值语义、动态数组 + 文件 |
+| 06 | multifile：多文件编译 | 声明 vs 定义、编译单元、链接、头文件保护 |
 
 ## 编译方式
 
 ```bash
+# 单文件（01–05）
 gcc -Wall -Wextra -o program 源文件.c
+
+# 多文件（06 起：所有 .c 一起交给编译器）
+gcc -Wall -Wextra main.c student.c -o prog
 ```
 
 所有程序都在 `gcc -Wall -Wextra` 下保持零警告。
